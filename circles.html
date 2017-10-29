@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="circles.css">
 
 	<script type="text/paperscript" canvas="myCanvas">
+	<!--sounds are included in header to decrease the load time of the app-->
 		var keyData = {
 			q: {
 				sound: new Howl({
@@ -163,7 +164,7 @@
 		  		urls: ['sounds/moon.mp3']
 				}),
 				color: '#2c3e50'
-			}
+			},
 		}
 
 		var circles = [];
@@ -179,7 +180,7 @@
 				circles.push(newCircle);
 			}
 		}
-
+              <!--create animation when different keys are pressed-->
 		function onFrame(event){
       for(var i = 0; i < circles.length; i++){
         circles[i].scale(0.9);
