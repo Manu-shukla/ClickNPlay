@@ -165,24 +165,7 @@
 				}),
 				color: '#2c3e50'
 			},
-			1: {
-			         sound: new Howl({
-				 urls: ['sound/moon.mp3']
-				 }),
-				 color:'#2c3e59'
-		        },
-			2: {
-			         sound: new Howl({
-				 urls: ['sound/timer.mp3']
-				 }),
-				 color:'#2c3e89'
-		        },
-			3: {
-			         sound: new Howl({
-				 urls: ['sound/strike.mp3']
-				 }),
-				 color:'#2c3e69'
-		        },
+			
 		
 		}
 
@@ -199,7 +182,7 @@
 				circles.push(newCircle);
 			}
 		}
-
+<!----create animation when different keys are pressed--->
 		function onFrame(event){
       for(var i = 0; i < circles.length; i++){
         circles[i].scale(0.9);
